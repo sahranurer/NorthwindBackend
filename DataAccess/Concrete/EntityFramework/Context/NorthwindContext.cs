@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-HE88LIR; database=Northwind; Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-HE88LIR; Database=Northwind; Trusted_Connection=true");
 
         }
         public DbSet<Product> Products { get; set; }
